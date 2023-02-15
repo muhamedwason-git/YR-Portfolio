@@ -1,0 +1,59 @@
+body::before {
+    display: block;
+    content: '';
+    height: 75px;
+}
+
+.body {
+    box-sizing: content-box;
+    transition: all .7s ease-out;
+}
+
+.back {
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(Image/FYZF7682.JPEG);;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.modal-online{
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(Image/OTraining.jpeg);;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+.modal-personal{
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(Image/PTraining.jpeg);;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+.modal-group {
+    background-image: linear-gradient(rgba(4,9,30,0.6),rgba(4,9,30,0.6)),url(Image/GTraining.jpeg);;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: cover;
+}
+.modal-body {
+    background-color: rgba(0,0,0,.0001);
+}
+
+section a{
+    text-decoration: none;
+}
+
+.H-titles {
+    position: sticky;
+    top: 350px;
+}
+
+h1 .title::after {
+    content: " ";
+    width: 80%;
+    height: 3px;
+    background-color: aqua;
+}
+
+footer a, #enrol a{
+    text-decoration: none;
+}
