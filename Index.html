@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Quicksand:wght@300;400;500;600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="./scss/style.scss">
   <link rel="stylesheet" href="./scss/style.css">
+  <link rel="stylesheet" href="/sass/index.css">
   <link rel="stylesheet" href="Font 6/css/all.css">
   <link rel="stylesheet" href="Font 6/css/all.min.css">
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -26,7 +27,7 @@
 </head>
 <body>
   
-  <!-- Navigation Bar-->
+                            <!--    Navigation Bar Menu Sectons    -->
 
   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
     <div class="container">
@@ -46,70 +47,75 @@
           <li class="nav-item active p-lg-3">
             <a href="#" class="nav-link">Home</a>
           </li>
-          <div class="vr"></div>
           <li class="nav-item p-lg-3">
             <a href="#About" class="nav-link">About Me</a>
           </li>
           <li class="nav-item p-lg-3">
             <a href="#Programmes" class="nav-link">Works</a>
           </li>
-          <li class="nav-item p-lg-3">
+          <!-- <li class="nav-item p-lg-3">
             <a href="#Contact" class="nav-link">Contacts</a>
-          </li>
+          </li> -->
         </ul>
       </div>
     </div>
   </nav>
 
-  <!--Homepage-->
+                      <!--    Homepage Section    -->
 
   <section class="back text-light p-5 bg-light">
-    <div class="container my-5" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
-      <div class="row my-5 pt-5 text-lg-center">
-        <div class="col col-lg-7 offset-lg-5 my-5 pt-5">
-          <h3>Meet Your</h3> 
-          <h1 class="pb-2 text-info fw-bold title">FITNESS TRAINER</h1>
+    <div class="container my-2" data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
+      <div class="Home-details">
+        <div class="col-lg-7 offset-lg-5 p-1 mt-50">
+          <h3>Hello!</h3> 
+          <h2 class="text-info fw-bold">Yusuf Rabiu</h2>
+          <h1 class="text-info fw-bold title">FITNESS TRAINER</h1>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Ad ullam mollitia sapiente beatae blanditiis consectetur dignissimos! Distinctio quibusdam, 
             mollitia modi ea nemo impedit ipsa non explicabo blanditiis rerum unde aperiam.
           </p>
-          <div class="my-5">
-            <button type="button" class="btn btn-outline-info btn-lg my-5 fw-bold">
-              <a href="#enrol">Start Here!</a>
-            </button>
-          </div>
+        
+          <button type="button" class="btn btn-outline-info btn-md fw-bold my-2 z-30">
+            <a href="#">Download Resume</a>
+          </button>
         </div>
       </div>
     </div>
+
+    <span>
+      <button class="call-btn1" type="button"
+      data-bs-toggle="modal"
+      data-bs-target="#Enrol"
+      data-aos="fade-up" 
+      data-aos-duration="1000" 
+      data-aos-once="true">
+      <i class="fa fa-comments" aria-hidden="true"></i></button>
+    </span>
+  
+    <span class="position-fixed top-50 start-0 mx-3 translate-middle flex-column fs-5"> 
+      <div><a href="" class="bi bi-instagram text-dark mx-lg-5 pb-12 "></a></div>
+      <div><a href="" class="bi bi-whatsapp text-dark mx-lg-5 pb-12 "></a></div>
+      <div><a href="" class="bi bi-twitter text-dark mx-lg-5 pb-12 "></a></div>
+    </span>
+
   </section>
-
-  <div class="contact-me fixed-bottom pb-10 ">
-    <button class="call-btn1" type="button" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'});"><i class="fa fa-comments" aria-hidden="true"></i></button>
-  </div>
-
-  <span class="mb-5 pb-5 flex-column fs-lg-5 p-1 text-dark fixed-bottom"> 
-    <div><a href="" class="bi bi-instagram text-dark mx-1 mx-lg-5 pb-2"></a></div>
-    <div><a href="" class="bi bi-facebook text-dark mx-1 mx-lg-5 pb-2"></a></div>
-    <div><a href="" class="bi bi-whatsapp text-dark mx-1 mx-lg-5 pb-2"></a></div>
-    <div><a href="" class="bi bi-twitter text-dark mx-1 mx-lg-5 pb-5"></a></div>
-  </span>
 
   <!--About Me-->
 
-  <section class="bg-light p-5 py-lg-5 text-dark text-center about pt-5" id="About">
+  <section class="bg-light p-5 py-lg-5 text-dark text-center about" id="About">
     <div class="container">
       <div class="row">
-        <div class="col-lg-3 text-lg-start my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
+        <div class="col-lg-3 text-lg-start" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
           <h1>About</h1> 
         </div>
-        <div class="col-lg-9 my-5" data-aos-duration="2000" data-aos-delay="50" data-aos="fade-up">
+        <div class="col-lg-9 my-3" data-aos-duration="2000" data-aos-delay="50" data-aos="fade-up">
           <div class="row">
             <div class="col-12 col-lg-8 my-lg-3 clearfix">
               <img class="img-fluid rounded shadow bg-body rounded col-md-12 mb-4 ms-md-1" src="Image/Success.jpeg" alt="">
             </div>
 
             <div class="col-12 col-lg-4 my-lg-5 text-center">
-              <p class="my-4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+              <p class="my-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
                 Praesentium debitis expedita, autem dolore aut quo ipsam adipisci facilis magni quae minima laudantium ab ea! Nostrum sit, 
                 similique iure, voluptas quam ut ex tenetur esse aperiam reprehenderit exercitationem quis quidem neque impedit maxime et ipsam tempora dignissimos aut aliquid doloribus deserunt.
               </p>
@@ -127,7 +133,7 @@
     </div>
   </section>
 
-  <!-- programmes -->
+               <!-- programmes sections -->
 
   <section class="bg-light p-3 text-dark text-center programmes" id="Programmes">
     <div class="container">
@@ -221,7 +227,7 @@
             
           </div>
           
-          <!-- Client's Transformation -->
+          <!--        Client's Transformation section           -->
 
           <div class="pt-5" data-aos-delay="30" data-aos="fade-up">
             <h4 class="pb-3 text-center fw-bold">Client's Transformation</h4>
@@ -238,7 +244,7 @@
                     <p class="card-text">Working from home meant my body felt stiffer, my energy plummeted and my motivation to train was non-existent. 
                       but also their lifestyle and nutrition coaching. I've got my energy back, and have ended up with a physique better than even when I was in my 20s!"
                     </p>
-                    <p class="card-text text-end fw-bold"><small class="text-muted">- Dave Wood</small></p>
+                    <p class="card-text text-end fw-bold"><small class="text-muted"> <span class="bi bi-instagram text-muted"> - @davewood</span></small></p>
                   </div>
                 </div>
               </div>
@@ -250,7 +256,7 @@
                     <p class="card-text">Working from home meant my body felt stiffer, my energy plummeted and my motivation to train was non-existent. 
                       but also their lifestyle and nutrition coaching. I've got my energy back, and have ended up with a physique better than even when I was in my 20s!"
                     </p>
-                    <p class="card-text text-end fw-bold"><small class="text-muted">- Dave Wood</small></p>
+                    <p class="card-text text-end fw-bold"><small class="text-muted"> <span class="bi bi-instagram text-muted"> - @davewood</span></small></p>
                   </div>
                 </div>
               </div>
@@ -262,7 +268,7 @@
                     <p class="card-text">Working from home meant my body felt stiffer, my energy plummeted and my motivation to train was non-existent. 
                       but also their lifestyle and nutrition coaching. I've got my energy back, and have ended up with a physique better than even when I was in my 20s!"
                     </p>
-                    <p class="card-text text-end fw-bold"><small class="text-muted">- Dave Wood</small></p>
+                    <p class="card-text text-end fw-bold"><small class="text-muted"><span class="bi bi-instagram text-muted"> - @davewood</span></small></p>
                   </div>
                 </div>
               </div>
@@ -274,14 +280,15 @@
                     <p class="card-text">Working from home meant my body felt stiffer, my energy plummeted and my motivation to train was non-existent. 
                       but also their lifestyle and nutrition coaching. I've got my energy back, and have ended up with a physique better than even when I was in my 20s!"
                     </p>
-                    <p class="card-text text-end fw-bold"><small class="text-muted">- Dave Wood</small></p>
+                    <p class="card-text text-end fw-bold"><small class="text-muted"><span class="bi bi-instagram text-muted"> - @davewood</span></small></p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
           
-          <!-- Programes FAQ -->
+          <!--    Programes FAQ sections      -->
+
           <div class="" data-aos-delay="50" data-aos="fade-in">
             <h4 class="text-center fw-bold"> Programes FAQ</h4>
             <div class="accordion pt-3 text-start" id="accordionPanelsStayOpenExample ">
@@ -340,24 +347,30 @@
     </div>
   </section>
 
-  <section class="bg-dark p-3 py-lg-5 text-white" id="Contact" >
+                          <!--                    The contact Section            -->
+
+  <!-- <section class="bg-dark p-3 py-lg-5 text-white" id="Contact" >
     <div class="container">
       <div class="row">
         <div class="col-lg-3 text-center text-md-start my-auto" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="50" data-aos-once="true">
           <h1>Contacts</h1>
         </div>
+
         <div class="col-lg-9 py-5"data-aos-delay="20" data-aos="zoom-in">
           <div class="row g-2">
             <div class="col-md my-auto">
               <ul class="list-group list-group-flush">
+
                 <li class="list-group-item">
                   <span class="fw-bold">Phone:</span> (+234) 803386565
                 </li>
                 <li class="list-group-item">
                   <span class="fw-bold">Email:</span> Muhamedwason@yahoo.com
                 </li>
+
                 <li class="list-group-item">
                   <span class="fw-bold">Socials:</span>
+
                   <ul class="list-group list-group-flush mx-auto">
                     <li class="list-group-item text-decoration-none">
                       <a href="" class="bi bi-instagram text-dark"> Instagram</a>
@@ -372,19 +385,16 @@
                       <a href="" class="bi bi-twitter text-dark"> Twitter</a>
                     </li>
                   </ul>
+
                 </li>
               </ul>
-            </div>
-    
-            <div class="col-md d-none d-lg-block">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3963.8430903791927!2d3.245931469801812!3d6.541489835985031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103b859bba0902db%3A0x87c56c5e34be6da3!2sChampions%20gym!5e0!3m2!1sen!2sng!4v1635269530465!5m2!1sen!2sng" width="650" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-  </section>
+  </section> -->
 
   <!-- Modal-Enrol -->
   <div class="modal fade" id="Enrol" tabindex="-1" aria-labelledby="EnrolLabel" aria-hidden="true">
