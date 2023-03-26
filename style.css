@@ -10,7 +10,7 @@ body::before {
 }
 
 .back {
-    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(Image/FYZF7682.JPEG);;
+    background-image: linear-gradient(rgba(4,9,30,0.4),rgba(4,9,30,0.4)),url(Image/BackG.JPG);;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -43,6 +43,10 @@ section a{
 }
 
 .H-titles {
+    position: sticky;
+    top: 350px;
+}
+.H-title {
     position: sticky;
     top: 350px;
 }
